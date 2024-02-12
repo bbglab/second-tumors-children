@@ -1,0 +1,17 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 24
+memory = 100G
+[jobs]
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt1-t1-allsamples-t1/AQ5174/germline_caller/AQ5174.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt1/AQ5174/vcf_processing/haplotype_caller/ -n_id AQ5174 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt2-t1-allsamples-t1/AQ5175/germline_caller/AQ5175.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt2/AQ5175/vcf_processing/haplotype_caller/ -n_id AQ5175 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt3-t1-allsamples-t1/AQ5176/germline_caller/AQ5176.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt3/AQ5176/vcf_processing/haplotype_caller/ -n_id AQ5176 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt4-t1-allsamples-t1/AQ5177/germline_caller/AQ5177.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt4/AQ5177/vcf_processing/haplotype_caller/ -n_id AQ5177 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt5-t1-allsamples-t1/AQ5178/germline_caller/AQ5178.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt5/AQ5178/vcf_processing/haplotype_caller/ -n_id AQ5178 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt6-t1-allsamples-t1/AQ5179/germline_caller/AQ5179.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt6/AQ5179/vcf_processing/haplotype_caller/ -n_id AQ5179 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt7-t1-allsamples-t1/AW8058/germline_caller/AW8058.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt7/AW8058/vcf_processing/haplotype_caller/ -n_id AW8058 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt8-t1-allsamples-t1/AW8061/germline_caller/AW8061.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt8/AW8061/vcf_processing/haplotype_caller/ -n_id AW8061 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt10-t1-allsamples-t1/AW8059/germline_caller/AW8059.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt10/AW8059/vcf_processing/haplotype_caller/ -n_id AW8059 -c 24
+python /workspace/projects/sjd_pediatric_tumors/code/filters/process_haplotype_caller.py -i /workspace/datasets/sjd_seq/platinum_results/20220809/pt11-t1-allsamples-t1/AW8060/germline_caller/AW8060.germline.vcf.gz -o /workspace/projects/sjd_pediatric_tumors/mafs_platinum/20220809/pt11/AW8060/vcf_processing/haplotype_caller/ -n_id AW8060 -c 24
