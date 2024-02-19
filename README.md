@@ -2,7 +2,14 @@
 This repository contains the necessary code to reproduce the analysis of "Origins of second tumors in children and mutational footprint of chemotherapy in normal tissues"
 Sánchez-Guixé M. et al 2024
 
-Original data (CRAM files) can be found at: EGAS50000000167
+## Original data
+
+Original data (CRAM files) can be found at: EGAS50000000167.  
+
+## Conda environments
+
+```process_vc.yml```: This is the main conda environment used in this project. This is used in all jupyter notebooks as kernel.  
+Occasionaly, other conda environments are used in some analysis. This is annotated accordingly.  
 
 ## Repository organisation:  
 ```
