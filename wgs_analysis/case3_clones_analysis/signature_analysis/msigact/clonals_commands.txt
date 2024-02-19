@@ -1,0 +1,13 @@
+conda activate msigact
+
+mkdir output_sbs31/ output_sbs35/
+
+python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_input.py --input_file ../../mutations_pt1_t2_clones.tsv.gz --genome_reference hg38 --output_file pt1_t2_clones.matrix.tsv
+
+python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_sigs.py --pcawg_sigs_file /workspace/projects/sjd_pediatric_tumors/code/run_deconstructsigs/signatures.pcawg --out_file sigs_SBS31.tsv --sigs SBS1,SBS5,SBS18,SBS40,SBS31
+
+Rscript /workspace/projects/sjd_pediatric_tumors/code/run_msigact/run_pipeline.R /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/pt1_t2_clones.matrix.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/sigs_SBS31.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/output_sbs31/ 1
+
+python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_sigs.py --pcawg_sigs_file /workspace/projects/sjd_pediatric_tumors/code/run_deconstructsigs/signatures.pcawg --out_file sigs_SBS35.tsv --sigs SBS1,SBS5,SBS18,SBS40,SBS35
+
+Rscript /workspace/projects/sjd_pediatric_tumors/code/run_msigact/run_pipeline.R /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/pt1_t2_clones.matrix.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/sigs_SBS35.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_pt1_t2_clones_strelka_SBS40/output_sbs35/ 1
