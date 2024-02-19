@@ -18,7 +18,8 @@ Original data (CRAM files) can be found at: EGAS50000000167
 	|- case3_normal_tissues
 	|	|- mutation_calling
 	|	|	|- sarek 
-	|	|- vcf_postprocessing
+	|	|- vcf_postprocessig
+	|	|- dPCR
 	|- case3_clones_analysis
 	|	|- signature_analysis
 - duplex_analysis
@@ -45,7 +46,10 @@ Original data (CRAM files) can be found at: EGAS50000000167
     - From CRAM files to variant calling VCF files ```mutation_calling```:  
         - Sarek pipeline (Mutect2, Haplotypecaller) ```sarek```:  
     - From VCF files to postprocessed annotated files ```vcf_postprocessing```:  
-**Figure 3B**, **Supplementary Figure S5B,C,D**   
+**Figure 3B**, **Supplementary Figure S5B,C,D**
+    - Digital PCR results ```dPCR```:  
+**Supplementary Figure S8A**
+
     1.3. Case 3; expanded clones analysis ```case3_clones_analysis```:   
     - Mutational signatures analysis ```signature_analysis```:  
 **Figure 3C**, **Supplementary Figure S6C**  
