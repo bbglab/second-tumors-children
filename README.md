@@ -54,10 +54,10 @@ Original data (CRAM files) can be found at: EGAS50000000167
     - Mutational signatures analysis ```signature_analysis```:  
 **Figure 3C**, **Supplementary Figure S6C**  
 
-2. Duplex Sequencing analysis ```duplex_sequencing```:  
-2.1 Mutational profiles of private mutations ```mutational_profiles```:  
+2. Duplex Sequencing analysis ```duplex_sequencing```:
+    - Mutational profiles of private mutations ```mutational_profiles```:  
 **Supplementary Figure S11**  
-2.2 Signature analysis of private mutations ```signature_analysis```:  
+    - Signature analysis of private mutations ```signature_analysis```:  
 **Supplementary Figure S6B**, **Supplementary Figure S12**, **Supplementary Figure S13**, **Supplementary Figure S14**  
 
 
