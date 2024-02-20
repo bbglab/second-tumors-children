@@ -1,17 +1,11 @@
-#Monica Sanchez. 01/02/21
 #Run all commands in the output folder. Input file should be there.
 
 interactive -m 20
 conda activate mutcall
 
 
-########## SAREK 3.1.1 ######################## 09/12/22
+########## SAREK 3.1.1 ########################
 
-#bam alignment and haplotype caller for normal samples. Using the reference genome with no_ALT (the one used in Hartwig)
-nextflow run nf-core/sarek -r 3.1.1 -profile singularity -c /workspace/datasets/sjd_seq/code/sarek/sarek_3.1.conf --input input_fastq_new_tissues_LOPEBIG50.csv --genome GATK.GRCh38 --tools haplotypecaller --fasta /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa --fasta_fai /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai --dict /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict --bwa False --save_reference --save_output_as_bam
+#variant calling mutect (tumor vs normal) ref genome same as HMF pipeline (no ALT contigs).
 
-#variant calling mutect (tumor vs normal) ref genome same as HMF (no ALT contigs). Fixed mutect last step filterings.
-nextflow run nf-core/sarek -r 3.1.1 -profile singularity -c /workspace/users/msanchezg/bin/sarek-2.6.1/sarek.conf --input input_vc.csv --step variant_calling --tools mutect2 --fasta /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa --fasta_fai /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai --dict /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict --germline_resource /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz --germline_resource_tbi /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz.tbi
-
-#variant calling mutect (tumor only) ref genome same as HMF (no ALT contigs). Fixed mutect last step filterings.
-nextflow run nf-core/sarek -r 3.1.1 -profile singularity -c /workspace/users/msanchezg/bin/sarek-2.6.1/sarek.conf --input input_mutect_LOPEBIG51.csv --step variant_calling --tools mutect2 --fasta /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa --fasta_fai /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai --dict /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict --germline_resource /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz --germline_resource_tbi /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz.tbi
+nextflow run nf-core/sarek -r 3.1.1 -profile singularity -c sarek.conf --input input_vc.csv --step variant_calling --tools 'mutect2,strelka,ascat' --fasta GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa --fasta_fai GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai --dict GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict --germline_resource gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz --germline_resource_tbi gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz.tbi
