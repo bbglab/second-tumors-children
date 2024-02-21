@@ -23,7 +23,9 @@ Before executing the filter_and_annot.py script, we need to calculate first the 
 Folder ```./data/``` contains three files:
 - ```ensembl_canonical_transcripts.tsv```: file with the canonical transcripts (1 per gene). This file is used in ```process_gridds.py``` script.
 - ```genomic_positions_ensembl.txt.gz```: file with starting and ending genomic positions of all genes. This file is used in ```process_gridds.py``` script.
-These two files were downloadad from ensembl biomart (version 101): ```https://www.ensembl.org/info/data/biomart/index.html```
+
+These two files above were downloadad from ensembl biomart (version 101): ```https://www.ensembl.org/info/data/biomart/index.html```
+
 - ```unique_drivers.tsv```: file with the complete set of drivers from Intogen release 2023 (This file can be downloaded from ```https://www.intogen.org/download/```).
 
 ## Examine the processed files
@@ -33,7 +35,7 @@ The notebook ```all_coding_alterations_per_sample.ipynb``` inspects and summaris
 - **Supplementary Table S1**: Table with relevant germline mutations from cancer predisposing genes. Saved in ```./table1_paper/``` as separated tables per case.
 - **Supplementary Table S2**: Table with relevant somatic mutations (snv and indels, cnv and sv). Saved in ```./table2_paper/``` as separated tables per case and mutation type.
 
-The notebook ```phylogenetic_trees_tumors.ipynb``` counts the common and unique number of mutations per sample and case. It creates phylogenetic trees per case. The trees shown in the Figures in the paper are created at biorender using the numbers calculated in this notebook.
+The notebook ```phylogenetic_trees_tumors.ipynb``` counts the common and unique number of mutations per sample and case. It creates phylogenetic trees per case. The trees shown in the Figures in the paper are created at biorender using the numbers calculated in this notebook. Note that case3 tree from the paper is calculated differenty (see ```case3_normal_tissues```)
 
 - **Figure 1B**
 - **Figure 2B**
