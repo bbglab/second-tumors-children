@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 8
+memory = 15G
+[jobs]
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case1/AQ5181_vs_AQ5175/process_vep_output/ -o ../output/case1/AQ5181_vs_AQ5175/filter_and_annot/ -t_id AQ5181 -n_id AQ5175 -ccf 0.6057787222048805 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5181.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5181.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case1/AQ5187_vs_AQ5175/process_vep_output/ -o ../output/case1/AQ5187_vs_AQ5175/filter_and_annot/ -t_id AQ5187 -n_id AQ5175 -ccf 0.5363311165234896 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5187.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5187.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case2/AQ5182_vs_AQ5176/process_vep_output/ -o ../output/case2/AQ5182_vs_AQ5176/filter_and_annot/ -t_id AQ5182 -n_id AQ5176 -ccf 0.4880408661925021 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5182.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5182.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case2/AQ5188_vs_AQ5176/process_vep_output/ -o ../output/case2/AQ5188_vs_AQ5176/filter_and_annot/ -t_id AQ5188 -n_id AQ5176 -ccf 0.6594260071476463 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5188.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5188.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case3/AQ5180_vs_AQ5174/process_vep_output/ -o ../output/case3/AQ5180_vs_AQ5174/filter_and_annot/ -t_id AQ5180 -n_id AQ5174 -ccf 0.4795411737486141 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5180.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5180.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case3/AQ5186_vs_AQ5174/process_vep_output/ -o ../output/case3/AQ5186_vs_AQ5174/filter_and_annot/ -t_id AQ5186 -n_id AQ5174 -ccf 0.5113676352736383 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AQ5186.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AQ5186.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case4/AW8050_vs_AW8061/process_vep_output/ -o ../output/case4/AW8050_vs_AW8061/filter_and_annot/ -t_id AW8050 -n_id AW8061 -ccf 0.49050357099165653 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AW8050.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AW8050.purple.purity.tsv
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case4/AW8051_vs_AW8061/process_vep_output/ -o ../output/case4/AW8051_vs_AW8061/filter_and_annot/ -t_id AW8051 -n_id AW8061 -ccf 0.4758741534200194 -c intersect -cnv /path/to/hmf_pipeline/output/purple/AW8051.purple.cnv.somatic.tsv -pur /path/to/hmf_pipeline/output/purple/AW8051.purple.purity.tsv

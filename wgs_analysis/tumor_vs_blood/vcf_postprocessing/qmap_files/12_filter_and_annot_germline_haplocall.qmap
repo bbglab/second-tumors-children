@@ -1,0 +1,11 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 8G
+[jobs]
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case1/AQ5175/process_vep_output/haplotype_caller/ -o ../output/case1/AQ5175/filter_and_annot/haplotype_caller/ -n_id AQ5175 -c hc --gnomad_threshold 0.01
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case2/AQ5176/process_vep_output/haplotype_caller/ -o ../output/case2/AQ5176/filter_and_annot/haplotype_caller/ -n_id AQ5176 -c hc --gnomad_threshold 0.01
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case3/AQ5174/process_vep_output/haplotype_caller/ -o ../output/case3/AQ5174/filter_and_annot/haplotype_caller/ -n_id AQ5174 -c hc --gnomad_threshold 0.01
+python ../python_scripts/filter_and_annot_muts.py -i ../output/case4/AW8061/process_vep_output/haplotype_caller/ -o ../output/case4/AW8061/filter_and_annot/haplotype_caller/ -n_id AW8061 -c hc --gnomad_threshold 0.01

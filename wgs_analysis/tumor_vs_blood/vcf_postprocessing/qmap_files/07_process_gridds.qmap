@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 8G
+[jobs]
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5181.purple.sv.vcf.gz -o ../output/AQ5181_vs_AQ5175/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5181 -n_id AQ5175
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5187.purple.sv.vcf.gz -o ../output/case1/AQ5187_vs_AQ5175/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5187 -n_id AQ5175
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5182.purple.sv.vcf.gz -o ../output/AQ5182_vs_AQ5176/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5182 -n_id AQ5176
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5188.purple.sv.vcf.gz -o ../output/case2/AQ5188_vs_AQ5176/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5188 -n_id AQ5176
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5180.purple.sv.vcf.gz -o ../output/AQ5180_vs_AQ5174/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5180 -n_id AQ5174
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AQ5186.purple.sv.vcf.gz -o ../output/case3/AQ5186_vs_AQ5174/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AQ5186 -n_id AQ5174
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AW8050.purple.sv.vcf.gz -o ../output/AW8050_vs_AW8061/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AW8050 -n_id AW8061
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/purple/AW8051.purple.sv.vcf.gz -o ../output/case4/AW8051_vs_AW8061/process_sv/gridds/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -t_id AW8051 -n_id AW8061

@@ -2,7 +2,7 @@
 
 ## Executing the python scripts to process the variant caller files
 
-All files are executed using qmap parallelisation in an HPC environment. Please see documentation here: ```https://github.com/bbglab/qmap```
+All files are executed using qmap parallelisation in an HPC environment. Please see documentation here: ```https://github.com/bbglab/qmap```. Qmaps are executed in the same ```qmap_files/``` folder
 
 The notebook ```qmap_process_vcf_files_from_hmf_pipeline_and_sarek.ipynb``` contains all the info to create the processed files.
 
@@ -19,6 +19,12 @@ Before executing the filter_and_annot.py script, we need to calculate first the 
 - **Figure 1D** (case1)
 - **Figure 2C** (case2)
 - **Suplementary Fig. S6A** (case3)
+
+Folder ```./data/``` contains two files:
+- ```ensembl_canonical_transcripts.tsv```: file with the canonical transcripts (1 per gene)
+- ```genomic_positions_ensembl.txt.gz```: file with starting and ending genomic positions of all genes.
+These two files were downloadad from ensembl biomart (version 101): ```https://www.ensembl.org/info/data/biomart/index.html```
+
 
 ## Examine the processed files
 

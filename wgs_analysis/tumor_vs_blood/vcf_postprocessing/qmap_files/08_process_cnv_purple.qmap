@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 8G
+[jobs]
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5181.purple.cnv.gene.tsv -o ../output/case1/AQ5181_vs_AQ5175/process_cnv/purple/ -t_id AQ5181 -n_id AQ5175
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5187.purple.cnv.gene.tsv -o ../output/case1/AQ5187_vs_AQ5175/process_cnv/purple/ -t_id AQ5187 -n_id AQ5175
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5182.purple.cnv.gene.tsv -o ../output/case2/AQ5182_vs_AQ5176/process_cnv/purple/ -t_id AQ5182 -n_id AQ5176
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5188.purple.cnv.gene.tsv -o ../output/case2/AQ5188_vs_AQ5176/process_cnv/purple/ -t_id AQ5188 -n_id AQ5176
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5180.purple.cnv.gene.tsv -o ../output/case3/AQ5180_vs_AQ5174/process_cnv/purple/ -t_id AQ5180 -n_id AQ5174
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AQ5186.purple.cnv.gene.tsv -o ../output/case3/AQ5186_vs_AQ5174/process_cnv/purple/ -t_id AQ5186 -n_id AQ5174
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AW8050.purple.cnv.gene.tsv -o ../output/case4/AW8050_vs_AW8061/process_cnv/purple/ -t_id AW8050 -n_id AW8061
+python ../python_scripts/process_cnv_purple.py -i /path/to/hmf_pipeline/output/purple/AW8051.purple.cnv.gene.tsv -o ../output/case4/AW8051_vs_AW8061/process_cnv/purple/ -t_id AW8051 -n_id AW8061

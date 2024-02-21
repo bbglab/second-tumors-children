@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 8G
+[jobs]
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5175.gripss.filtered.germline.vcf.gz -o ../output/case1/AQ5175/process_sv/gripss/t1/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5175 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5175.gripss.filtered.germline.vcf.gz -o ../output/case1/AQ5175/process_sv/gripss/t2/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5175 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5176.gripss.filtered.germline.vcf.gz -o ../output/case2/AQ5176/process_sv/gripss/t1/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5176 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5176.gripss.filtered.germline.vcf.gz -o ../output/case2/AQ5176/process_sv/gripss/t2/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5176 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5174.gripss.filtered.germline.vcf.gz -o ../output/case3/AQ5174/process_sv/gripss/t1/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5174 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AQ5174.gripss.filtered.germline.vcf.gz -o ../output/case3/AQ5174/process_sv/gripss/t2/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AQ5174 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AW8061.gripss.filtered.germline.vcf.gz -o ../output/case4/AW8061/process_sv/gripss/t1/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AW8061 --is_germline
+python ../python_scripts/process_gridds.py -i /path/to/hmf_pipeline/output/gripss_germline/AW8061.gripss.filtered.germline.vcf.gz -o ../output/case4/AW8061/process_sv/gripss/t2/ -gp ../data/genomic_positions_ensembl.txt.gz -ct ../data/ensembl_canonical_transcripts.tsv -n_id AW8061 --is_germline

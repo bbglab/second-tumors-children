@@ -1,0 +1,11 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 24
+memory = 100G
+[jobs]
+python ../python_scripts/process_haplotype_caller.py -i /path/to/hmf_pipeline/output/AQ5175/germline_caller/AQ5175.germline.vcf.gz -o ../output/case1/AQ5175/vcf_processing/haplotype_caller/ -n_id AQ5175 -c 24
+python ../python_scripts/process_haplotype_caller.py -i /path/to/hmf_pipeline/output/AQ5176/germline_caller/AQ5176.germline.vcf.gz -o ../output/case2/AQ5176/vcf_processing/haplotype_caller/ -n_id AQ5176 -c 24
+python ../python_scripts/process_haplotype_caller.py -i /path/to/hmf_pipeline/output/AQ5174/germline_caller/AQ5174.germline.vcf.gz -o ../output/case3/AQ5174/vcf_processing/haplotype_caller/ -n_id AQ5174 -c 24
+python ../python_scripts/process_haplotype_caller.py -i /path/to/hmf_pipeline/output/AW8061/germline_caller/AW8061.germline.vcf.gz -o ../output/case4/AW8061/vcf_processing/haplotype_caller/ -n_id AW8061 -c 24
