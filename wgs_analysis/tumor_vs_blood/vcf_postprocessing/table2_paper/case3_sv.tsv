@@ -1,0 +1,111 @@
+SYMBOL	intogen	role	mut	fusion	cgc_transl	chr/chr	sv_type	distance	Tumor
+MYCN	True	Act	chr2:15942475:C>C[chr2:15942572[	MYCN-del	False	chr2	del	97	1
+FOXP1	True	Act	chr3:71040531:C>C[chr3:71099048[	FOXP1-del	True	chr3	del	58517	1
+GALNT1	False		chr18:35589777:T>]chr18:35589952]T	GALNT1-del	False	chr18	del	175	1
+ALG14	False		chr1:95023313:A>[chr17:58991027[A	ALG14/TRIM37	False	chr1/chr17	fusion	-	1
+TRIM37	False		chr17:58991027:G>[chr1:95023313[G	TRIM37/ALG14	False	chr17/chr1	fusion	-	1
+NBAS	False		chr2:15454924:G>GTTTTTTTTTTTTTTTTTTA.	NBAS-ins	False	chr2	ins	0	1
+NBAS	False		chr2:15468148:A>AATAAGTGTCAGAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTGACCGATAGTGTAGATCTCGGTGGT.	NBAS-ins	False	chr2	ins	0	1
+NBAS	False		chr2:15468148:A>AATAAGTGTCAGAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTGACCGATAGTGTAGATCTCGGTGGT.	NBAS-ins	False	chr2	ins	0	1
+NBAS	False		chr2:15474578:T>TCTTTGAGAGATCGGAAGAGCACACGTCTGAACTCCAGTCACATCCG.	NBAS-ins	False	chr2	ins	0	1
+NBAS	False		chr2:15407882:T>]chr2:16627671]CAT	NBAS/FAM49A	False	chr2	inv	1219789	1
+	False		chr2:15569510:T>TTATTATATAGATCGGACG.	-/-	False	chr2	inv	0	1
+	False		chr2:15580145:T>TTTATAATAGATCGGAAGAGCACACGTCTGAACTCCAGTCACATCCGGTAAAGTACA.	-/-	False	chr2	inv	0	1
+DDX1	False		chr2:15592946:A>[chr2:32916230[GGA	DDX1/-	False	chr2	inv	17323284	1
+	False		chr2:15685988:A>AGTTTTTGTTTTTTTTTTTTTTTTTTTGTGTTGTG.	-/-	False	chr2	inv	0	1
+	False		chr2:15783525:A>A[chr2:15783671[	-/-	False	chr2	inv	146	1
+	False		chr2:15783671:G>]chr2:15783525]G	-/-	False	chr2	inv	-146	1
+	False		chr2:15842912:G>G[chr2:15842952[	-/-	False	chr2	inv	40	1
+	False		chr2:15842952:C>]chr2:15842912]C	-/-	False	chr2	inv	-40	1
+	False		chr2:15865136:G>G[chr2:15865272[	-/-	False	chr2	inv	136	1
+	False		chr2:15865272:G>]chr2:15865136]G	-/-	False	chr2	inv	-136	1
+	False		chr2:15883237:G>G[chr2:15883270[	-/-	False	chr2	inv	33	1
+	False		chr2:15883270:A>]chr2:15883237]A	-/-	False	chr2	inv	-33	1
+	False		chr2:15885522:A>A[chr2:15885658[	-/-	False	chr2	inv	136	1
+	False		chr2:15885658:G>]chr2:15885522]G	-/-	False	chr2	inv	-136	1
+	False		chr2:15928279:A>A[chr2:15928413[	-/-	False	chr2	inv	134	1
+	False		chr2:15928413:T>]chr2:15928279]T	-/-	False	chr2	inv	-134	1
+	False		chr2:15952474:A>AGGTAAAGTAACCCCGGGCGTTGAATTTTTTTCCAAAAAACCCCGGCCCGGGGTTTTCAGGCACCCAACGGGTAAAAACGTGGGGTAAACCCGGGGATATTTTCCG.	-/-	False	chr2	inv	0	1
+	False		chr2:15984511:C>C[chr2:15984758[	-/-	False	chr2	inv	247	1
+	False		chr2:15984758:T>]chr2:15984511]T	-/-	False	chr2	inv	-247	1
+	False		chr2:16255453:C>CGCAATGCCCCACCACATCGACCCGGGTGTGTTGTAGATCGGGGGG.	-/-	False	chr2	inv	0	1
+	False		chr2:16269962:T>TTTTTGTGTTTATTATTTTTGTGATATGATGTGCTCAGTTGTTAACTAATGTTTAATGCTGTTATTTGATAG.	-/-	False	chr2	inv	0	1
+	False		chr2:16395387:A>]chr2:16395514]A	-/-	False	chr2	inv	127	1
+	False		chr2:16395514:C>C[chr2:16395387[	-/-	False	chr2	inv	-127	1
+	False		chr2:16422198:G>GGGTGTGTAGTGGATTGTTATAGTTTTAGCAGTCGTTTTTACTGTATTTTGATACGTGATTTTTTATTTTTTTGTTTGCCGTCTTACTCTTG.	-/-	False	chr2	inv	0	1
+	False		chr2:16433327:G>GAAGGCCCAGGTGGATCGGAAGAGCACACGTCTGAAC.	-/-	False	chr2	inv	0	1
+	False		chr2:16473656:A>AATTACCAAGATCGGAAGAGCACACGTCTGAACTCCAGTCACATCCGGTAAGACCCGGAATCTCGTATGCCGTCTT.	-/-	False	chr2	inv	0	1
+FAM49A	False		chr2:16627671:A>ACA[chr2:15407882[	FAM49A/NBAS	False	chr2	inv	-1219789	1
+	False		chr2:32916230:G>[chr2:15592946[CCG	-/DDX1	False	chr2	inv	-17323284	1
+	False		chr2:231687008:G>]chr2:231687689]G	-/-	False	chr2	inv	681	1
+	False		chr2:231687689:C>C[chr2:231687008[	-/-	False	chr2	inv	-681	1
+	False		chr10:79326361:T>T[chr10:79326423[	-/-	False	chr10	inv	62	1
+	False		chr10:79326423:C>]chr10:79326361]C	-/-	False	chr10	inv	-62	1
+	False		chr12:65726612:A>]chr12:65727986]A	-/-	False	chr12	inv	1374	1
+	False		chr12:65727986:T>T[chr12:65726612[	-/-	False	chr12	inv	-1374	1
+	False		chr17:21939075:G>GGAGTGGAGTGCAGTGAAATAGAGTCAACTGGAATGGAATGGAGTGGAAAGGAGTGGAAAGTTTTGGAATGCAATGTAATGGTAGGGAGTGGAATGGAACACAGTGGAGTGGAGTGGAATGGAGTGCACTGGAGTGGAATTCTGTAGAATGGTATGGAGTGGAGTGGAGTGGAATGGAGT.	-/-	False	chr17	inv	0	1
+	False		chr17:69378834:G>G[chr17:69378970[	-/-	False	chr17	inv	136	1
+	False		chr17:69378970:T>]chr17:69378834]T	-/-	False	chr17	inv	-136	1
+NBAS	False			-	False	chr2/-	other	-	1
+NBAS	False			-	False	chr2/-	other	-	1
+NBAS	False			-	False	chr2/-	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False		chr2:15580144:G>[chr16:79781177[G	-/-	False	chr2/chr16	other	-	1
+	False		chr2:15648581:G>G]chrX:50618378]	-/SHROOM4	False	chr2/chrX	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False		chr2:15888616:A>]chr14:21994032]AAA	-/-	False	chr2/chr14	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False		chr2:16220093:A>]chr8:102751688]CAAA	-/-	False	chr2/chr8	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False		chr2:16499098:G>G]chr7:64761444]	-/-	False	chr2/chr7	other	-	1
+	False			-	False	chr2/-	other	-	1
+	False		chr7:64761444:G>G]chr2:16499098]	-/-	False	chr7/chr2	other	-	1
+	False		chr8:102751688:A>ACAA[chr2:16220093[	-/-	False	chr8/chr2	other	-	1
+	False		chr14:21994032:A>AAA[chr2:15888616[	-/-	False	chr14/chr2	other	-	1
+	False		chr16:24224115:C>C]chr20:48029264]	-/-	False	chr16/chr20	other	-	1
+	False		chr16:24224124:T>[chr20:48029076[T	-/-	False	chr16/chr20	other	-	1
+	False		chr16:79781177:A>[chr2:15580144[A	-/-	False	chr16/chr2	other	-	1
+	False			-	False	chr17/-	other	-	1
+	False		chr20:48029076:T>[chr16:24224124[T	-/-	False	chr20/chr16	other	-	1
+	False		chr20:48029264:C>C]chr16:24224115]	-/-	False	chr20/chr16	other	-	1
+SHROOM4	False		chrX:50618378:T>T]chr2:15648581]	SHROOM4/-	False	chrX/chr2	other	-	1
+PTPRD	True	LoF	chr9:9229152:T>TGCAAT[chr9:9249415[	PTPRD-del	False	chr9	del	20263	2
+SLC39A8	False		chr4:102326306:A>A[chr4:102328771[	SLC39A8-del	False	chr4	del	2465	2
+FGD2	False		chr6:37022630:G>G[chr6:37022673[	FGD2-del	False	chr6	del	43	2
+CNTN5	False		chr11:99699556:A>]chr11:99717394]A	CNTN5-del	False	chr11	del	17838	2
+ADAMTS20	False		chr12:43515548:A>A[chr12:43515589[	ADAMTS20-del	False	chr12	del	41	2
+ENOX1	False		chr13:43407036:A>]chr13:43407400]GTACATTCTGTATCCCAGAACTTAAA	ENOX1-del	False	chr13	del	364	2
+CLCN7	False		chr16:1445872:G>G[chr16:1445926[	CLCN7-del	False	chr16	del	54	2
+SRRM2	False		chr16:2762918:G>G[chr16:2762973[	SRRM2-del	False	chr16	del	55	2
+KDM6B	False		chr17:7844553:C>C[chr17:7845152[	KDM6B-del	False	chr17	del	599	2
+NCAM2	False		chr21:21395643:A>A[chr21:21510345[	NCAM2-del	False	chr21	del	114702	2
+	False		chr4:97056700:T>T[chr4:97056781[	-/-	False	chr4	inv	81	2
+	False		chr4:97056781:A>]chr4:97056700]A	-/-	False	chr4	inv	-81	2
+	False		chr4:122759686:T>T]chr4:122850918]	-/FGF2	False	chr4	inv	91232	2
+	False		chr4:122759687:C>[chr4:122850919[C	-/FGF2	False	chr4	inv	91232	2
+FGF2	False		chr4:122850918:G>G]chr4:122759686]	FGF2/-	False	chr4	inv	-91232	2
+FGF2	False		chr4:122850919:C>[chr4:122759687[C	FGF2/-	False	chr4	inv	-91232	2
+	False		chr11:104890188:C>C]chr11:127814821]	-/-	False	chr11	inv	22924633	2
+	False		chr11:104890189:C>[chr11:127814820[C	-/-	False	chr11	inv	22924631	2
+	False		chr11:127814820:T>[chr11:104890189[T	-/-	False	chr11	inv	-22924631	2
+	False		chr11:127814821:A>A]chr11:104890188]	-/-	False	chr11	inv	-22924633	2
+	False		chr12:9118193:A>A[chr12:9118755[	-/-	False	chr12	inv	562	2
+	False		chr12:9118755:C>]chr12:9118193]C	-/-	False	chr12	inv	-562	2
+	False		chr13:86014325:T>]chr13:86014413]T	-/-	False	chr13	inv	88	2
+	False		chr13:86014413:A>A[chr13:86014325[	-/-	False	chr13	inv	-88	2
+	False		chr16:4277774:A>]chr16:4279644]A	-/-	False	chr16	inv	1870	2
+	False		chr16:4279644:G>G[chr16:4277774[	-/-	False	chr16	inv	-1870	2
+	False		chrX:40271883:G>G]chrX:51775357]	-/-	False	chrX	inv	11503474	2
+	False		chrX:40271895:A>[chrX:51775359[A	-/-	False	chrX	inv	11503464	2
+	False		chrX:51775357:A>A]chrX:40271883]	-/-	False	chrX	inv	-11503474	2
+	False		chrX:51775359:G>[chrX:40271895[G	-/-	False	chrX	inv	-11503464	2
+SP3	False		chr2:173928317:A>[chr12:9118193[A	SP3/-	False	chr2/chr12	other	-	2
+SP3	False		chr2:173928327:A>A]chr12:9118746]	SP3/-	False	chr2/chr12	other	-	2
+	False		chr12:9118193:A>[chr2:173928317[A	-/SP3	False	chr12/chr2	other	-	2
+	False		chr12:9118746:C>C]chr2:173928327]	-/SP3	False	chr12/chr2	other	-	2
+ADA2	False		nan:17229802:A>A[chr22:34540744[	ADA2/-	False	chr22	other	17310942	2
+	False		nan:34540744:A>]chr22:17229802]A	-/ADA2	False	chr22	other	-17310942	2

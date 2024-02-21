@@ -1,0 +1,6 @@
+SYMBOL	origin	germline	role	variant_type	aa_change	n_AF_real	gnomADg_AF	mut
+DICER1	germline	True	LoF	miss_inframe	Y1385C	0.456	0.0	chr14:95099832:T>C
+WRN	germline	True	LoF	miss_inframe	T1262R	0.429	0.00270229	chr8:31154721:C>G
+SERPINA1	germline	True		truncating	E347X	0.251	0.000252635	chr14:94379488:CT>-
+CFTR	germline	True		miss_inframe	G576A	0.474	0.00508143	chr7:117590400:G>C
+CFTR	germline	True		miss_inframe	R668C	0.414	0.00612105	chr7:117592169:C>T

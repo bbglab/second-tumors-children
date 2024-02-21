@@ -1,0 +1,8 @@
+SYMBOL	origin	germline	role	variant_type	aa_change	n_AF_real	gnomADg_AF	mut
+CDH1	germline	True	LoF	miss_inframe	P30T	0.41200000000000003	0.00127792	chr16:68738336:C>A
+COL7A1	germline	True		miss_inframe	G636V	0.46399999999999997	0.00415549	chr3:48590356:C>A
+GBA	germline	True		miss_inframe	T408M	0.47700000000000004	0.0062042	chr1:155236246:G>A
+RTEL1	germline	True		miss_inframe	GE770-771G	0.496	0.00496245	chr20:63690338:AGA>-
+RAD50	germline	True		miss_inframe	Q426R	0.5820000000000001	0.000146535	chr5:132589662:A>G
+RAF1	germline	True	Act	other	H389	0.484	6.28483e-05	chr3:12599692:G>A
+SLX4	germline	True		miss_inframe	R237Q	0.542	0.00830588	chr16:3606524:C>T

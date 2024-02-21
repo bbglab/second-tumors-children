@@ -1,0 +1,28 @@
+SYMBOL	intogen	role	mut	fusion	cgc_transl	chr/chr	sv_type	distance	Tumor
+FHIT	True	ambiguous	chr3:60334050:T>T[chr3:60343507[	FHIT-del	True	chr3	del	9457	1
+DYDC2	False		chr10:80356996:C>C[chr10:80357274[	DYDC2-del	False	chr10	del	278	1
+RNF215	False		nan:30387399:G>G[chr22:30387438[	RNF215-del	False	chr22	del	39	1
+	False		chr1:194481532:C>C[chr1:194481569[	-/-	False	chr1	inv	37	1
+	False		chr1:194481569:T>]chr1:194481532]T	-/-	False	chr1	inv	-37	1
+	False		chr2:88861251:A>AGGGGC[chr2:89196082[	-/-	False	chr2	inv	334831	1
+	False		chr2:88861257:A>A]chr2:88886153]	-/-	False	chr2	inv	24896	1
+	False		chr2:88861924:C>[chr2:88897787[C	-/-	False	chr2	inv	35863	1
+	False		chr2:88886153:T>T]chr2:88861257]	-/-	False	chr2	inv	-24896	1
+	False		chr2:88897787:C>[chr2:88861924[C	-/-	False	chr2	inv	-35863	1
+	False		chr2:89196082:T>]chr2:88861251]GGGGCT	-/-	False	chr2	inv	-334831	1
+	False		chr5:111521459:A>A[chr5:111521511[	-/-	False	chr5	inv	52	1
+	False		chr5:111521511:C>]chr5:111521459]C	-/-	False	chr5	inv	-52	1
+	False		chr6:169810445:T>T[chr6:169810503[	-/-	False	chr6	inv	58	1
+	False		chr6:169810503:G>]chr6:169810445]G	-/-	False	chr6	inv	-58	1
+	False		chr14:105864254:C>CGTTTCCTCCCACCCCT[chr14:106373661[	-/-	False	chr14	inv	509407	1
+	False		chr14:106373661:C>]chr14:105864254]GTTTCCTCCCACCCCTC	-/-	False	chr14	inv	-509407	1
+	False		chr8:127735006:C>C[chr14:105864133[	-/-	False	chr8/chr14	other	-	1
+	False		chr8:127735019:C>]chr14:105864168]C	-/-	False	chr8/chr14	other	-	1
+	False		chr14:105864133:G>]chr8:127735006]G	-/-	False	chr14/chr8	other	-	1
+	False		chr14:105864168:G>G[chr8:127735019[	-/-	False	chr14/chr8	other	-	1
+IPO13	False		chr1:43950913:A>A[chr1:119287567[	IPO13/-	False	chr1	inv	75336654	2
+	False		chr1:119287567:C>]chr1:43950913]C	-/IPO13	False	chr1	inv	-75336654	2
+	False		chr8:41327481:A>A[chr8:41327710[	-/-	False	chr8	inv	229	2
+	False		chr8:41327710:C>]chr8:41327481]C	-/-	False	chr8	inv	-229	2
+	False		chr11:77501999:A>AGGGTTATTTTCGTTAATGTTAGTAAGGGTAGGGAAGC[chr11:77502005[	-/-	False	chr11	inv	6	2
+	False		chr11:77502005:G>]chr11:77501999]GGGTTATTTTCGTTAATGTTAGTAAGGGTAGGGAAGCG	-/-	False	chr11	inv	-6	2

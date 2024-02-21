@@ -1,0 +1,12 @@
+SYMBOL	origin	germline	role	variant_type	aa_change	n_AF_real	gnomADg_AF	mut
+ATM	germline	True	LoF	miss_inframe	V182L	0.65	0.00741762	chr11:108244000:G>C
+ATM	germline	True	LoF	miss_inframe	R2854C	0.53	0.000125677	chr11:108345884:C>T
+EGFR	germline	True	Act	miss_inframe	A1210V	0.485	0.000328066	chr7:55205613:C>T
+MET	germline	True	Act	other	-	0.5529999999999999	0.00131405	chr7:116769637:C>-
+CBL	germline	True	Act	miss_inframe	P687L	0.488	0.000118727	chr11:119296941:C>T
+ITK	germline	True		miss_inframe	R193Q	0.526	0.00387494	chr5:157222945:G>A
+EP300	germline	True	LoF	miss_inframe	G211S	0.529	0.00632876	chr22:41117723:G>A
+FAT1	germline	True	LoF	miss_inframe	F2549L	0.483	0.000223367	chr4:186618941:A>G
+FANCM	germline	True		miss_inframe	D556G	0.486	0.000104711	chr14:45164444:A>G
+JMJD1C	germline	True		miss_inframe	S1429L	0.38299999999999995	0.000544556	chr10:63207383:G>A
+NDRG4	germline	True		other	-	0.49700000000000005	7.67417e-05	chr16:58509151:C>T

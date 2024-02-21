@@ -1,0 +1,63 @@
+SYMBOL	intogen	role	mut	fusion	cgc_transl	chr/chr	sv_type	distance	Tumor
+TCF7L2	True	Act	chr10:112988994:A>A[chr10:113046386[	TCF7L2-del	True	chr10	del	57392	1
+FOXO1	True	Act	chr13:40596631:T>T[chr2:222218414[	FOXO1/PAX3	True	chr13/chr2	fusion	-	1
+FOXO1	True	Act	chr13:40596668:C>[chr2:222217523[C	FOXO1/PAX3	True	chr13/chr2	fusion	-	1
+TCF12	True		chr15:57054537:G>G]chr15:57561950]	TCF12/-	True	chr15	inv	507413	1
+PATJ	False		chr1:61928598:C>C[chr1:61933425[	PATJ-del	False	chr1	del	4827	1
+TTC7A	False		chr2:47041786:T>T[chr2:47041925[	TTC7A-del	False	chr2	del	139	1
+PAX3	False		chr2:222217724:C>C]chr2:222218643]	PAX3-del	True	chr2	del	919	1
+MEGF10	False		chr5:127450737:A>]chr5:127457508]A	MEGF10-del	False	chr5	del	6771	1
+PHACTR2	False		chr6:143616201:A>A]chr6:143627824]	PHACTR2-del	False	chr6	del	11623	1
+KLHL1	False		chr13:69933996:G>GAT[chr13:69974703[	KLHL1-del	False	chr13	del	40707	1
+NMNAT2	False		chr1:183303835:G>G]chr13:69974848]	NMNAT2/KLHL1	False	chr1/chr13	fusion	-	1
+PKP1	False		chr1:201308986:A>[chr13:69929091[A	PKP1/KLHL1	False	chr1/chr13	fusion	-	1
+PAX3	False		chr2:222217523:A>[chr13:40596668[A	PAX3/FOXO1	True	chr2/chr13	fusion	-	1
+PAX3	False		chr2:222218414:A>]chr13:40596631]A	PAX3/FOXO1	True	chr2/chr13	fusion	-	1
+KLHL1	False		chr13:69929091:T>[chr1:201308986[T	KLHL1/PKP1	False	chr13/chr1	fusion	-	1
+KLHL1	False		chr13:69974848:C>C]chr1:183303835]	KLHL1/NMNAT2	False	chr13/chr1	fusion	-	1
+CADPS2	False		chr7:122369915:C>CATCATCAAATGGAATCGAATGGAATCAACATCAAATGGAATCAAATGGAATCATTGAACGGAATTGAATGGAATCGTCATCGAATGAATTGAATGCAATCATCGAATGGTCTCGAATGGAATCATCTTCAAATGGAATGGAATGGAATCATCACATAGAATCGAATGGAATTATCATCGAATGGAATCGAATGGAATCAACATCAAA.	CADPS2-ins	False	chr7	ins	0	1
+	False		chr1:52372508:T>T[chr1:52374419[	-/ORC1	False	chr1	inv	1911	1
+ORC1	False		chr1:52374419:T>]chr1:52372508]T	ORC1/-	False	chr1	inv	-1911	1
+TBX15	False		chr1:118976473:T>T[chr1:119109791[	TBX15/WARS2	False	chr1	inv	133318	1
+WARS2	False		chr1:119109791:T>]chr1:118976473]T	WARS2/TBX15	False	chr1	inv	-133318	1
+PAPPA2	False		chr1:176819977:G>G]chr1:176942486]	PAPPA2/ASTN1	False	chr1	inv	122509	1
+ASTN1	False		chr1:176942486:T>T]chr1:176819977]	ASTN1/PAPPA2	False	chr1	inv	-122509	1
+	False		chr1:229572858:C>C[chr1:229724402[	-/-	False	chr1	inv	151544	1
+	False		chr1:229724402:C>]chr1:229572858]C	-/-	False	chr1	inv	-151544	1
+	False		chr2:209402111:A>A[chr2:209815334[	-/UNC80	False	chr2	inv	413223	1
+UNC80	False		chr2:209815334:G>]chr2:209402111]G	UNC80/-	False	chr2	inv	-413223	1
+	False		chr2:240266295:T>]chr2:240472472]T	-/-	False	chr2	inv	206177	1
+	False		chr2:240472472:T>T[chr2:240266295[	-/-	False	chr2	inv	-206177	1
+PHACTR2	False		chr6:143627678:T>[chr6:147242547[T	PHACTR2/STXBP5	False	chr6	inv	3614869	1
+STXBP5	False		chr6:147242547:A>[chr6:143627678[A	STXBP5/PHACTR2	False	chr6	inv	-3614869	1
+	False		chr8:74611844:T>T[chr8:74612265[	-/-	False	chr8	inv	421	1
+	False		chr8:74612265:A>]chr8:74611844]A	-/-	False	chr8	inv	-421	1
+OTUD7A	False		chr15:31613152:G>]chr15:34736664]G	OTUD7A/-	False	chr15	inv	3123512	1
+	False		chr15:34736664:G>G[chr15:31613152[	-/OTUD7A	False	chr15	inv	-3123512	1
+	False		chr15:57561950:G>G]chr15:57054537]	-/TCF12	False	chr15	inv	-507413	1
+ARID3A	False		chr19:963743:A>]chr19:1004704]A	ARID3A/GRIN3B	False	chr19	inv	40961	1
+GRIN3B	False		chr19:1004704:C>C[chr19:963743[	GRIN3B/ARID3A	False	chr19	inv	-40961	1
+	False		chrX:12726708:C>C[chrX:12726810[	-/-	False	chrX	inv	102	1
+	False		chrX:12726810:T>]chrX:12726708]T	-/-	False	chrX	inv	-102	1
+	False		chrX:110941467:A>ACCTGA[chrX:111374370[	-/DCX	False	chrX	inv	432903	1
+CAPN6	False		chrX:111264005:G>G[chrX:111340742[	CAPN6/DCX	False	chrX	inv	76737	1
+DCX	False		chrX:111340742:G>]chrX:111264005]G	DCX/CAPN6	False	chrX	inv	-76737	1
+DCX	False		chrX:111374370:A>]chrX:110941467]CCTGAA	DCX/-	False	chrX	inv	-432903	1
+	False		chrX:120750522:G>G[chrX:120762286[	-/-	False	chrX	inv	11764	1
+	False		chrX:120762286:A>]chrX:120750522]A	-/-	False	chrX	inv	-11764	1
+	False		chrX:145974541:T>TGGCTGCTC[chrX:147306984[	-/-	False	chrX	inv	1332443	1
+	False		chrX:147306984:C>]chrX:145974541]GGCTGCTCC	-/-	False	chrX	inv	-1332443	1
+NRG1	True	Act	chr8:32176508:A>]chr8:32178458]A	NRG1-del	True	chr8	del	1950	2
+MECOM	True	Act	chr3:169642092:T>T[chr8:129411775[	MECOM/-	True	chr3/chr8	other	-	2
+MECOM	True	Act	chr3:169642093:A>]chr8:129411777]A	MECOM/-	True	chr3/chr8	other	-	2
+TXNL4A	False		chr18:79978070:T>T[chr18:79978125[	TXNL4A-del	False	chr18	del	55	2
+NKAIN4	False		chr20:63261361:C>C[chr20:63261398[	NKAIN4-del	False	chr20	del	37	2
+	False		chr4:186485386:T>T[chr4:186485421[	-/-	False	chr4	inv	35	2
+	False		chr4:186485421:C>]chr4:186485386]C	-/-	False	chr4	inv	-35	2
+	False		chr9:134997194:C>C[chr9:134997232[	-/-	False	chr9	inv	38	2
+	False		chr9:134997232:G>]chr9:134997194]G	-/-	False	chr9	inv	-38	2
+	False		chr12:63176663:G>G[chr12:63176717[	-/-	False	chr12	inv	54	2
+	False		chr12:63176717:G>]chr12:63176663]G	-/-	False	chr12	inv	-54	2
+	False		chr8:129411775:A>]chr3:169642092]A	-/MECOM	False	chr8/chr3	other	-	2
+	False		chr8:129411777:T>T[chr3:169642093[	-/MECOM	False	chr8/chr3	other	-	2
+	False			-	False	chr12/-	other	-	2
