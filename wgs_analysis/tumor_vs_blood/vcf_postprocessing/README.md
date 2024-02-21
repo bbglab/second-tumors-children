@@ -14,7 +14,11 @@ Each qmap file will execute each corresponding python script (```./python_script
 
 To execute vep, we need to install and activate vep101.yml conda environment.
 
-Before executing the filter_and_annot.py script, we need to calculate first the CCF and the thresholds for clonality. This is calculated in thisnotebook: ```TMB_and_CCF_analysis.ipynb```
+Before executing the filter_and_annot.py script, we need to calculate first the CCF and the thresholds for clonality. This is calculated in thisnotebook: ```TMB_and_CCF_analysis.ipynb```. Also, this notebook creates figures representing the CCF:
+
+- **Figure 1D** (case1)
+- **Figure 2C** (case2)
+- **Suplementary Fig. S6A** (case3)
 
 ## Examine the processed files
 
