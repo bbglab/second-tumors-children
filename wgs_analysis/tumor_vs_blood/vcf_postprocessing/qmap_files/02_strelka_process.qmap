@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 20G
+[jobs]
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5181_vs_AQ5175/AQ5181_vs_AQ5175.strelka.somatic_snvs.vcf.gz -o ./output/case1/AQ5181_vs_AQ5175/vcf_processing/strelka/ -t_id AQ5181 -n_id AQ5175
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5187_vs_AQ5175/AQ5187_vs_AQ5175.strelka.somatic_snvs.vcf.gz -o ./output/case1/AQ5187_vs_AQ5175/vcf_processing/strelka/ -t_id AQ5187 -n_id AQ5175
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5182_vs_AQ5176/AQ5182_vs_AQ5176.strelka.somatic_snvs.vcf.gz -o ./output/case2/AQ5182_vs_AQ5176/vcf_processing/strelka/ -t_id AQ5182 -n_id AQ5176
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5188_vs_AQ5176/AQ5188_vs_AQ5176.strelka.somatic_snvs.vcf.gz -o ./output/case2/AQ5188_vs_AQ5176/vcf_processing/strelka/ -t_id AQ5188 -n_id AQ5176
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5180_vs_AQ5174/AQ5180_vs_AQ5174.strelka.somatic_snvs.vcf.gz -o ./output/case3/AQ5180_vs_AQ5174/vcf_processing/strelka/ -t_id AQ5180 -n_id AQ5174
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AQ5186_vs_AQ5174/AQ5186_vs_AQ5174.strelka.somatic_snvs.vcf.gz -o ./output/case3/AQ5186_vs_AQ5174/vcf_processing/strelka/ -t_id AQ5186 -n_id AQ5174
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AW8050_vs_AW8061/AW8050_vs_AW8061.strelka.somatic_snvs.vcf.gz -o ./output/case4/AW8050_vs_AW8061/vcf_processing/strelka/ -t_id AW8050 -n_id AW8061
+python ./python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AW8051_vs_AW8061/AW8051_vs_AW8061.strelka.somatic_snvs.vcf.gz -o ./output/case4/AW8051_vs_AW8061/vcf_processing/strelka/ -t_id AW8051 -n_id AW8061

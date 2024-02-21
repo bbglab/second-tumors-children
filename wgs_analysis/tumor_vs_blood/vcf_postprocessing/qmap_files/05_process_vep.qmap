@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 8
+memory = 15G
+[jobs]
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case1/AQ5181_vs_AQ5175/vep_processing/ --path_input_maf ./output/case1/AQ5181_vs_AQ5175/vcf_processing/intersect/ --file_name AQ5181_vs_AQ5175 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case1/AQ5187_vs_AQ5175/vep_processing/ --path_input_maf ./output/case1/AQ5187_vs_AQ5175/vcf_processing/intersect/ --file_name AQ5187_vs_AQ5175 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case2/AQ5182_vs_AQ5176/vep_processing/ --path_input_maf ./output/case2/AQ5182_vs_AQ5176/vcf_processing/intersect/ --file_name AQ5182_vs_AQ5176 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case2/AQ5188_vs_AQ5176/vep_processing/ --path_input_maf ./output/case2/AQ5188_vs_AQ5176/vcf_processing/intersect/ --file_name AQ5188_vs_AQ5176 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case3/AQ5180_vs_AQ5174/vep_processing/ --path_input_maf ./output/case3/AQ5180_vs_AQ5174/vcf_processing/intersect/ --file_name AQ5180_vs_AQ5174 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case3/AQ5186_vs_AQ5174/vep_processing/ --path_input_maf ./output/case3/AQ5186_vs_AQ5174/vcf_processing/intersect/ --file_name AQ5186_vs_AQ5174 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case4/AW8050_vs_AW8061/vep_processing/ --path_input_maf ./output/case4/AW8050_vs_AW8061/vcf_processing/intersect/ --file_name AW8050_vs_AW8061 --cores 8
+python ./python_scripts/process_vep101.py --path_input_vep ./output/case4/AW8051_vs_AW8061/vep_processing/ --path_input_maf ./output/case4/AW8051_vs_AW8061/vcf_processing/intersect/ --file_name AW8051_vs_AW8061 --cores 8
