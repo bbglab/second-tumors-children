@@ -11,6 +11,6 @@ This folder contains the necessary information to reproduce the mutational profi
     - **Supplementary Figure S9B**
     - **Supplementary Figure S10C**
     
-- ```data```: folder containing the signature fiel from COSMIC database. Downloaded from ```https://cancer.sanger.ac.uk/signatures/downloads/```
+- ```data```: folder containing the signature fiel from COSMIC database. Downloaded from [COSMIC database](https://cancer.sanger.ac.uk/signatures/downloads/).
 
 - ```functions_to_plot_profiles.py```: python file containing all the necessary functions to create the mutational profile plots. This is loaded in the notebook.
