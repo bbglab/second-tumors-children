@@ -1,13 +1,9 @@
 conda activate msigact
 
-mkdir output_sbs31/ output_sbs35/
+mkdir subclonals/
+mkdir subclonals/output_sbs31/ subclonals/output_sbs35/
 
-python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_input.py --input_file ../../mutations_allsamples_run_20220809_subclonals.tsv.gz --genome_reference hg38 --output_file all_samples_run_20220809_sublconals.matrix.tsv
+python ../scripts/create_matrix_input.py --input_file ../input/mutations_subclonals.tsv.gz --genome_reference hg38 --output_file subclonals.matrix.tsv
 
-python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_sigs.py --pcawg_sigs_file /workspace/projects/sjd_pediatric_tumors/code/run_deconstructsigs/signatures.pcawg --out_file sigs_SBS31.tsv --sigs SBS1,SBS5,SBS18,SBS31
-
-Rscript /workspace/projects/sjd_pediatric_tumors/code/run_msigact/run_pipeline.R /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_allsamples_run20220809_subclonals/all_samples_run_20220809_sublconals.matrix.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_allsamples_run20220809_subclonals/sigs_SBS31.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230210_tumor_only_analysis_filtered_muts/output_sbs31/ 1
-
-python /workspace/projects/sjd_pediatric_tumors/code/run_msigact/create_matrix_sigs.py --pcawg_sigs_file /workspace/projects/sjd_pediatric_tumors/code/run_deconstructsigs/signatures.pcawg --out_file sigs_SBS35.tsv --sigs SBS1,SBS5,SBS18,SBS35
-
-Rscript /workspace/projects/sjd_pediatric_tumors/code/run_msigact/run_pipeline.R /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_allsamples_run20220809_subclonals/all_samples_run_20220809_sublconals.matrix.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_allsamples_run20220809_subclonals/sigs_SBS35.tsv /workspace/projects/sjd_pediatric_tumors/signatures/fitting/msigact/230220_allsamples_run20220809_subclonals/output_sbs35/ 1
+Rscript ../scripts/run_pipeline.R /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/subclonals.matrix.tsv /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/sigs_SBS31.tsv /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/subclonals/output_sbs31/ 1
+Rscript ../scripts/run_pipeline.R /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/subclonals.matrix.tsv /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/sigs_SBS35.tsv /root/to/repo/second-tumors-children/wgs_analysis/tumor_vs_blood/signature_analysis/msigact/subclonals/output_sbs35/ 1
