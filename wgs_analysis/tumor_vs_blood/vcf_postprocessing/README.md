@@ -2,7 +2,7 @@
 
 ## Executing the python scripts to process the variant caller files
 
-All files are executed using qmap parallelisation in an HPC environment. Please see documentation here: ```https://github.com/bbglab/qmap```. Qmaps are executed in the same ```qmap_files/``` folder
+All files are executed using qmap parallelisation in an HPC environment. Please see documentation [here](https://github.com/bbglab/qmap). Qmaps are executed in the same ```qmap_files/``` folder
 
 The notebook ```qmap_process_vcf_files_from_hmf_pipeline_and_sarek.ipynb``` contains all the info to create the processed files.
 
@@ -24,9 +24,9 @@ Folder ```./data/``` contains three files:
 - ```ensembl_canonical_transcripts.tsv```: file with the canonical transcripts (1 per gene). This file is used in ```process_gridds.py``` script.
 - ```genomic_positions_ensembl.txt.gz```: file with starting and ending genomic positions of all genes. This file is used in ```process_gridds.py``` script.
 
-These two files above were downloadad from ensembl biomart (version 101): ```https://www.ensembl.org/info/data/biomart/index.html```
+These two files above were downloadad [from ensembl biomart](https://www.ensembl.org/info/data/biomart/index.html) (version 101).
 
-- ```unique_drivers.tsv```: file with the complete set of drivers from Intogen release 2023 (This file can be downloaded from ```https://www.intogen.org/download/```).
+- ```unique_drivers.tsv```: file with the complete set of drivers from Intogen release 2023 (This file can be downloaded from [the IntOGen website](https://www.intogen.org/download/)).
 
 ## Examine the processed files
 
