@@ -1,0 +1,13 @@
+patient,sex,sample,status,cram,crai
+case1,XX,AQ5181,1,AQ5181.recal.cram,AQ5181.recal.cram.crai
+case1,XX,AQ5187,1,AQ5187.recal.cram,AQ5187.recal.cram.crai
+case1,XX,AQ5175,0,AQ5175.recal.cram,AQ5175.recal.cram.crai
+case2,XY,AQ5182,1,AQ5182.recal.cram,AQ5182.recal.cram.crai
+case2,XY,AQ5188,1,AQ5188.recal.cram,AQ5188.recal.cram.crai
+case2,XY,AQ5176,0,AQ5176.recal.cram,AQ5176.recal.cram.crai
+case3,XX,AQ5180,1,AQ5180.recal.cram,AQ5180.recal.cram.crai
+case3,XX,AQ5186,1,AQ5186.recal.cram,AQ5186.recal.cram.crai
+case3,XX,AQ5174,0,AQ5174.recal.cram,AQ5174.recal.cram.crai
+case4,XX,AW8050,1,AW8050.converted.cram,AW8050.converted.cram.crai
+case4,XX,AW8051,1,AW8051.converted.cram,AW8051.converted.cram.crai
+case4,XX,AW8061,0,AW8061.converted.cram,AW8061.converted.cram.crai
