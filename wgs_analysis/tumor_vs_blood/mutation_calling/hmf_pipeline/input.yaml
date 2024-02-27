@@ -1,0 +1,353 @@
+gcp:
+    project: project-name
+    region: europe-west3
+image: eu.gcr.io/hmf-images/pipeline5:platinum-5.28
+outputBucket: output-bucket
+argumentOverrides:
+    image_project: hmf-images
+    image_name: hmf-public-pipeline-v5-28
+    ref_genome_version: 38
+batch:
+    size: 2
+    delay: 1440
+samples:
+-   name: case1
+    tumors:
+    -   name: AQ5181
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_1_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_1_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_2_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_2_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_3_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_3_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_4_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_4_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_1_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_1_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_2_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_2_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_3_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_3_43UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_4_43UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_4_43UDI-idt-UMI_2.fastq.gz
+    -   name: AQ5187
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_1_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_1_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_2_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_2_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_3_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_3_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_4_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_4_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_1_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_1_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_2_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_2_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_3_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_3_20UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_4_20UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_4_20UDI-idt-UMI_2.fastq.gz
+    normal:
+        name: AQ5175
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_1_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_1_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_2_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_2_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_3_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_3_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_4_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_4_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_1_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_1_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_2_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_2_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_3_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_3_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_4_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_4_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_1_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_1_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_2_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_2_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_3_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_3_66UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_4_66UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_4_66UDI-idt-UMI_2.fastq.gz
+-   name: case2
+    tumors:
+    -   name: AQ5182
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_1_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_1_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_2_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_2_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_3_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_3_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_4_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_4_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_1_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_1_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_2_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_2_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_3_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_3_55UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_4_55UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_4_55UDI-idt-UMI_2.fastq.gz
+    -   name: AQ5188
+        fastq:
+        -   read1: gs://input_bucket/H2VW5DSXY_1_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_1_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_2_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_2_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_3_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_3_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_4_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_4_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VWGDSXY_1_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VWGDSXY_1_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VWGDSXY_2_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VWGDSXY_2_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VWGDSXY_3_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VWGDSXY_3_86UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VWGDSXY_4_86UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VWGDSXY_4_86UDI-idt-UMI_2.fastq.gz
+    normal:
+        name: AQ5176
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_1_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_1_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_2_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_2_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_3_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_3_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_4_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_4_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_1_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_1_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_2_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_2_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_3_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_3_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_4_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_4_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK7JMDSX3_1_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK7JMDSX3_1_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK7JMDSX3_2_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK7JMDSX3_2_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK7JMDSX3_3_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK7JMDSX3_3_78UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK7JMDSX3_4_78UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK7JMDSX3_4_78UDI-idt-UMI_2.fastq.gz
+-   name: case3
+    tumors:
+    -   name: AQ5180
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_1_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_1_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_2_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_2_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_3_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_3_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_4_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_4_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_1_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_1_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_2_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_2_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_3_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_3_31UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_4_31UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_4_31UDI-idt-UMI_2.fastq.gz
+    -   name: AQ5186
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_1_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_1_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_2_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_2_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_3_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_3_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VF5DSXY_4_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VF5DSXY_4_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_1_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_1_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_2_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_2_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_3_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_3_8UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VW5DSXY_4_8UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VW5DSXY_4_8UDI-idt-UMI_2.fastq.gz
+    normal:
+        name: AQ5174
+        fastq:
+        -   read1: gs://input_bucket/H2TKWDSXY_1_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_1_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_2_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_2_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_3_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_3_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2TKWDSXY_4_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2TKWDSXY_4_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_1_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_1_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_2_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_2_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_3_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_3_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2VY7DSXY_4_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2VY7DSXY_4_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_1_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_1_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_2_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_2_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_3_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_3_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK2CCDSX3_4_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK2CCDSX3_4_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_1_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_1_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_2_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_2_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_3_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_3_54UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HK5YWDSX3_4_54UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HK5YWDSX3_4_54UDI-idt-UMI_2.fastq.gz
+-   name: case4
+    tumors:
+    -   name: AW8050
+        fastq:
+        -   read1: gs://input_bucket/H2GC7DSX3_1_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_1_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_2_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_2_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_3_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_3_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_4_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_4_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_1_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_1_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_2_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_2_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_3_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_3_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_4_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_4_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_1_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_1_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_2_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_2_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_3_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_3_132UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_4_132UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_4_132UDI-idt-UMI_2.fastq.gz
+    -   name: AW8051
+        fastq:
+        -   read1: gs://input_bucket/H2GC7DSX3_1_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_1_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_2_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_2_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_3_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_3_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H2GC7DSX3_4_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H2GC7DSX3_4_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_1_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_1_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_2_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_2_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_3_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_3_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/H5VFJDSX3_4_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/H5VFJDSX3_4_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_1_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_1_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_2_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_2_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_3_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_3_144UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HCVVJDSX3_4_144UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HCVVJDSX3_4_144UDI-idt-UMI_2.fastq.gz
+    normal:
+        name: AW8061
+        fastq:
+        -   read1: gs://input_bucket/HGWGKDSX3_1_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HGWGKDSX3_1_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HGWGKDSX3_2_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HGWGKDSX3_2_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HGWGKDSX3_3_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HGWGKDSX3_3_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HGWGKDSX3_4_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HGWGKDSX3_4_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMGGWDSX3_1_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMGGWDSX3_1_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMGGWDSX3_2_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMGGWDSX3_2_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMGGWDSX3_3_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMGGWDSX3_3_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMGGWDSX3_4_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMGGWDSX3_4_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMH2WDSX3_1_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMH2WDSX3_1_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMH2WDSX3_2_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMH2WDSX3_2_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMH2WDSX3_3_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMH2WDSX3_3_120UDI-idt-UMI_2.fastq.gz
+        -   read1: gs://input_bucket/HMH2WDSX3_4_120UDI-idt-UMI_1.fastq.gz
+            read2: gs://input_bucket/HMH2WDSX3_4_120UDI-idt-UMI_2.fastq.gz
