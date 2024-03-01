@@ -1,0 +1,6 @@
+interactive -m 50
+conda activate process_vc
+
+#this scripts takes into account that the bam files are stored in the hmf_pipeline structure('./SAMPLE_ID/aligner/SAMPLE_ID.bam') or the sarek output structure ('./preprocessing/recalibrated/SAMPLE_ID/SAMPLE_ID.recal.bam')
+
+python ../scripts/retrive_indel_mut_counts_from_bam.py --muts_file ../output/somatic_depth_filtered.tsv.gz --samples_json ../dictionaries/samples_dict.json --suffixes_json ../dictionaries/suffixes_dict.json --base_path ../../../tumor_vs_normal/mutation_calling/hmf_pipeline/ --sarek_path ../../mutation_calling/sarek/ --output_file rescued_indel_muts_from_bam.tsv.gz

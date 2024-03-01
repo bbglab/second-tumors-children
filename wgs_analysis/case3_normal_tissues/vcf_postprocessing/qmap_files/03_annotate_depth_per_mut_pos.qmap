@@ -1,0 +1,21 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 50G
+[jobs]
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AQ5174/ --output_file ../depth/AQ5174/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AQ5180/ --output_file ../depth/AQ5180/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AQ5186/ --output_file ../depth/AQ5186/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4954/ --output_file ../depth/AX4954/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4955/ --output_file ../depth/AX4955/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4956/ --output_file ../depth/AX4956/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4957/ --output_file ../depth/AX4957/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AW8063/ --output_file ../depth/AW8063/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AW8064/ --output_file ../depth/AW8064/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4962/ --output_file ../depth/AX4962/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4963/ --output_file ../depth/AX4963/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4964/ --output_file ../depth/AX4964/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4965/ --output_file ../depth/AX4965/depth_muts.tsv.gz
+python ../scripts/depth_from_muts.py --input_somatic_muts ../output/somatic_from_hc_mutect_parents.tsv --input_folder ../depth/AX4966/ --output_file ../depth/AX4966/depth_muts.tsv.gz
