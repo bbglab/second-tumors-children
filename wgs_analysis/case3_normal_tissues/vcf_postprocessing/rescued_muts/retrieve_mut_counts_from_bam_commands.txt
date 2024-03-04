@@ -1,0 +1,11 @@
+interactive -m 50 -c 24
+conda activate process_vc
+
+#path to platinum is to get the bams from tumor1, tumor2 and blood. Path structure is the following: './SAMPLE_ID/aligner/SAMPLE_ID.bam'
+#path to sarek is to get the bams from the rest of the normal tissues and the parent's blood. Path structure is the following: './preprocessing/recalibrated/SAMPLE_ID/SAMPLE_ID.recal.bam'
+#alterantively, this script accepts a dictionary with the path to the bam file (--bams_json). e.g.: {'sample_id':'/path/to/bam',...}
+#--platinum_path and --sarek_path options are not required if puting --bams_json instead
+
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_depth_filtered.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type snv --output_file rescued_snv_muts_from_bam.tsv.gz --cpus 24
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_depth_filtered.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type indel --output_file rescued_indel_muts_from_bam.tsv.gz --cpus 24
+

@@ -1,0 +1,31 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 8
+memory = 15G
+[jobs]
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr1_somatic_muts_vep.tsv --output ../vep/vep_process/chr1_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr2_somatic_muts_vep.tsv --output ../vep/vep_process/chr2_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr3_somatic_muts_vep.tsv --output ../vep/vep_process/chr3_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr4_somatic_muts_vep.tsv --output ../vep/vep_process/chr4_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr5_somatic_muts_vep.tsv --output ../vep/vep_process/chr5_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr6_somatic_muts_vep.tsv --output ../vep/vep_process/chr6_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr7_somatic_muts_vep.tsv --output ../vep/vep_process/chr7_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr8_somatic_muts_vep.tsv --output ../vep/vep_process/chr8_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr9_somatic_muts_vep.tsv --output ../vep/vep_process/chr9_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr10_somatic_muts_vep.tsv --output ../vep/vep_process/chr10_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr11_somatic_muts_vep.tsv --output ../vep/vep_process/chr11_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr12_somatic_muts_vep.tsv --output ../vep/vep_process/chr12_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr13_somatic_muts_vep.tsv --output ../vep/vep_process/chr13_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr14_somatic_muts_vep.tsv --output ../vep/vep_process/chr14_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr15_somatic_muts_vep.tsv --output ../vep/vep_process/chr15_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr16_somatic_muts_vep.tsv --output ../vep/vep_process/chr16_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr17_somatic_muts_vep.tsv --output ../vep/vep_process/chr17_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr18_somatic_muts_vep.tsv --output ../vep/vep_process/chr18_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr19_somatic_muts_vep.tsv --output ../vep/vep_process/chr19_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr20_somatic_muts_vep.tsv --output ../vep/vep_process/chr20_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr21_somatic_muts_vep.tsv --output ../vep/vep_process/chr21_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chr22_somatic_muts_vep.tsv --output ../vep/vep_process/chr22_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chrX_somatic_muts_vep.tsv --output ../vep/vep_process/chrX_somatic_muts_vep_filt.tsv.gz --cores 8
+python ../scripts/process_vep101_alltissues.py --input ../vep/vep_output/chrY_somatic_muts_vep.tsv --output ../vep/vep_process/chrY_somatic_muts_vep_filt.tsv.gz --cores 8
