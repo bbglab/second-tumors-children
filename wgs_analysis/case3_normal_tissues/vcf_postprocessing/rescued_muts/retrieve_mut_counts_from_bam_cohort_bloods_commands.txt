@@ -1,6 +1,6 @@
 interactive -m 50 -c 24
 conda activate process_vc
 
-python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_filtered_vep_hc_mutect.tsv.gz --samples_json ../dictionaries/blood_samples_dict.json --suffixes_json ../dictionaries/blood_suffixes_dict.json --bams_json ../dicionaries/blood_bams_dict.json --variant_type snv --output_file blood_snv_muts_from_bam.tsv.gz --cpus 24
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/05_somatic_filtered_vep_hc_mutect.tsv.gz --samples_json ../dictionaries/blood_samples_dict.json --suffixes_json ../dictionaries/blood_suffixes_dict.json --bams_json ../dictionaries/blood_bams_dict.json --variant_type snv --output_file blood_snv_muts_from_bam.tsv.gz --cpus 24
 
-python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_filtered_vep_hc_mutect.tsv.gz --samples_json ../dictionaries/blood_samples_dict.json --suffixes_json ../dictionaries/blood_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type indel --output_file blood_indel_muts_from_bam.tsv.gz --cpus 24
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/05_somatic_filtered_vep_hc_mutect.tsv.gz --samples_json ../dictionaries/blood_samples_dict.json --suffixes_json ../dictionaries/blood_suffixes_dict.json --bams_json ../dictionaries/blood_bams_dict.json --variant_type indel --output_file blood_indel_muts_from_bam.tsv.gz --cpus 24

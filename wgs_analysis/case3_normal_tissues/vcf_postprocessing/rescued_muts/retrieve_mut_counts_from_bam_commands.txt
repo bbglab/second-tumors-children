@@ -6,6 +6,7 @@ conda activate process_vc
 #alterantively, this script accepts a dictionary with the path to the bam file (--bams_json). e.g.: {'sample_id':'/path/to/bam',...}
 #--platinum_path and --sarek_path options are not required if puting --bams_json instead
 
-python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_depth_filtered.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type snv --output_file rescued_snv_muts_from_bam.tsv.gz --cpus 24
-python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/somatic_depth_filtered.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type indel --output_file rescued_indel_muts_from_bam.tsv.gz --cpus 24
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/02_somatic_depth_filtered_hc_mutect_parents.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type snv --output_file rescued_snv_muts_from_bam.tsv.gz --cpus 24
+
+python ../scripts/retrieve_mut_counts_from_bam.py --muts_file ../output/02_somatic_depth_filtered_hc_mutect_parents.tsv.gz --samples_json ../dictionaries/parents_samples_dict.json --suffixes_json ../dictionaries/parents_suffixes_dict.json --platinum_path /path/to/platinum/output/ --sarek_path /path/to/sarek/output/ --variant_type indel --output_file rescued_indel_muts_from_bam.tsv.gz --cpus 24
 

@@ -1,4 +1,0 @@
-conda activate samtools
-
-#get depth per chromosome
-samtools depth -r chr1 /workspace/datasets/sjd_seq/sarek_results/pt1/results/preprocessing/recalibrated/AX4954/AX4954.recal.cram
