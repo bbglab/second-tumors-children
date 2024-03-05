@@ -1,0 +1,4 @@
+patient,sex,sample,status,cram,crai
+case3,XX,AQ5174,0,AQ5174.recal.cram,AQ5174.recal.cram.crai
+case3,XX,AX4958,1,AX4958.recal.cram,AX4958.recal.cram.crai
+case3,XX,AX4961,1,AX4961.recal.cram,AX4961.recal.cram.crai

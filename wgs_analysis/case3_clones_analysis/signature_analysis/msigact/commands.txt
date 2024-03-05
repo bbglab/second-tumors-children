@@ -1,0 +1,13 @@
+conda activate msigact
+
+mkdir output_sbs31/ output_sbs35/
+
+python ../../../tumor_vs_blood/signature_analysis/scripts/create_matrix_input.py --input_file ../input/clonals_case3_t2.tsv.gz --genome_reference hg38 --output_file clones.matrix.tsv
+
+python ../../../tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file sigs_SBS31.tsv --sigs SBS1,SBS5,SBS18,SBS40,SBS31
+
+Rscript ../../../tumor_vs_blood/signature_analysis/scripts/run_pipeline.R /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/clones.matrix.tsv /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/sigs_SBS31.tsv  /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/output_sbs31/ 1
+
+python ../../../tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file sigs_SBS35.tsv --sigs SBS1,SBS5,SBS18,SBS40,SBS35
+
+Rscript ../../../tumor_vs_blood/signature_analysis/scripts/run_pipeline.R /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/clones.matrix.tsv /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/sigs_SBS35.tsv  /absolut/path/to/second-tumors-children/wgs_analysis/case3_clones_analysis/signature_analysis/msigact/output_sbs35/ 1

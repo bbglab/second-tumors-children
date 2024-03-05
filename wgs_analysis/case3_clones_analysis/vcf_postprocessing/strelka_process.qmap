@@ -1,0 +1,9 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate process_vc
+[params]
+cores = 1
+memory = 20G
+[jobs]
+python ../../tumor_vs_blood/vcf_postprocessing/python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AX4958_vs_AQ5174/AX4958_vs_AQ5174.strelka.somatic_snvs.vcf.gz -o ./output/case3/AX4958_vs_AQ5174/vcf_processing/strelka/ -t_id AX4958 -n_id AQ5174
+python ../../tumor_vs_blood/vcf_postprocessing/python_scripts/process_strelka_v2.9.10_vcf.py -i /path/to/sarek/output/variant_calling/strelka/AX4961_vs_AQ5174/AX4961_vs_AQ5174.strelka.somatic_snvs.vcf.gz -o ./output/case3/AX4961_vs_AQ5174/vcf_processing/strelka/ -t_id AX4961 -n_id AQ5174

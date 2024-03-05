@@ -1,0 +1,10 @@
+#Run all commands in the output folder. Input file should be there.
+
+interactive -m 20
+conda activate mutcall
+
+########## SAREK 3.1.1 ########################
+
+#variant calling strelka (tumor vs. normal) ref genome same as HMF (no ALT contigs).
+
+nextflow run nf-core/sarek -r 3.1.1 -profile singularity -c sarek.conf --input input_vc.csv --step variant_calling --tools strelka --fasta /path/to/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa --fasta_fai /path/to/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai --dict /path/to/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict --germline_resource /path/to/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz --germline_resource_tbi /path/to/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.vcf.gz.tbi
