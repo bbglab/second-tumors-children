@@ -1,0 +1,7 @@
+{
+    "status": "PENDING",
+    "retries": 0,
+    "command": "Rscript ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/run_pipeline.R /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/synthetic_samples_sensitibity/AU2198/count_matrix.tsv /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/synthetic_samples_sensitibity/AU2198/sigs_SBS31.tsv /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/synthetic_samples_sensitibity/AU2198/SBS31/ 4",
+    "job_cmd": "sbatch --parsable -c 4 --mem 16G -D /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/qmap_files -J test_qmaps.None -o /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/qmap_files/06_msigact_script_per_sample_synthetic_sensitibity_injections_20240306/00.out -e /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/qmap_files/06_msigact_script_per_sample_synthetic_sensitibity_injections_20240306/00.err /workspace/projects/sjd_pediatric_tumors/second-tumors-children/duplex_analysis/signature_analysis/qmap_files/06_msigact_script_per_sample_synthetic_sensitibity_injections_20240306/00.sh",
+    "executor_id": "9258125"
+}

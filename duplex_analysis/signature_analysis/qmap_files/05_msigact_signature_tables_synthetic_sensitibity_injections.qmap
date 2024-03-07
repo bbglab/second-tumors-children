@@ -1,0 +1,15 @@
+[pre]
+. "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+conda activate msigact
+[params]
+cores = 1
+memory = 8G
+[jobs]
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AU2198/sigs_SBS31.tsv --sigs SBS1,SBS2,SBS45,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4609/sigs_SBS31.tsv --sigs SBS5,SBS18,SBS40,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4610/sigs_SBS31.tsv --sigs SBS5,SBS40,SBS45,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4611/sigs_SBS31.tsv --sigs SBS5,SBS40,SBS45,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4612/sigs_SBS31.tsv --sigs SBS1,SBS40,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4613/sigs_SBS31.tsv --sigs SBS2,SBS40,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AZ4614/sigs_SBS31.tsv --sigs SBS18,SBS40,SBS31
+python ../../../wgs_analysis/tumor_vs_blood/signature_analysis/scripts/create_matrix_sigs.py --cosmic_sigs_file ../../../wgs_analysis/tumor_vs_blood/signature_analysis/data/COSMIC_v3.3.1_SBS_GRCh38.txt --out_file ../synthetic_samples_sensitibity/AQ5187_vs_AQ5175/sigs_SBS31.tsv --sigs SBS1,SBS5,SBS18,SBS31
