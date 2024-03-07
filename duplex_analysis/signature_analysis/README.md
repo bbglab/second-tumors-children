@@ -14,7 +14,7 @@ To calculate a range of sensitivity of the method, we evaluate the number of SBS
 - ```Signature_analysis_with_mSigAct.ipynb```: notebook to analyse the presence of SBS31 signature with mSigAct, once we have already selected the signatures per sample.
 - ```qmap_msigact.ipynb```: notebook to create the qmap files necessary to run mSigAct per sample (with different set of signatures per sample) and the specificity and sensitibity tests.
 - ```test_sbs31_specificity_and_sensibility.ipynb```: notebook to perform specificity test (significant presence of SBS31), and sensitibity test (confidence interval).
-- ```.data/```: folder containing the triplet counts for the sequencing panel used in duplex sequencing (Twinstrand Mutagenesis).
+- ```./data/```: folder containing the triplet counts for the sequencing panel used in duplex sequencing (Twinstrand Mutagenesis).
 - ```./msigact/```: folder with the analysis of mSigAct in each sample. Follow the instructions in the qmap files.
 - ```./synthetic_samples_specificity/```: folder with the created synthetic samples based on the proportion of signatures for each sample without SBS31, and the corresponding mSigAct analysis.
 - ```./synthetic_samples_sensitivity/```: folder with the created synthetic samples with increasing injections of SBS31 mutations (and proportionally the rest of mutational signatures), and the corresponding mSigAct analysis.
