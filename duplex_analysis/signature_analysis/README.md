@@ -19,5 +19,11 @@ To calculate a range of sensitivity of the method, we evaluate the number of SBS
 - ```./synthetic_samples_specificity/```: folder with the created synthetic samples based on the proportion of signatures for each sample without SBS31, and the corresponding mSigAct analysis.
 - ```./synthetic_samples_sensitivity/```: folder with the created synthetic samples with increasing injections of SBS31 mutations (and proportionally the rest of mutational signatures), and the corresponding mSigAct analysis.
 - ```./qmap_files/```: qmap files to run mSigAct per sample and in the synthetic samples for the specificity test and the sensitivity test.
-- ```./figures_paper/```: folder containing the figrues for the paper. Note that the sensitivity test and specificity test are not exactly the same figures due to the randomisation of the syntehtic samples everytime we execute the code.
 - ```./confidence_intervals/```: json files with the calclated confidence intervals for SBS31 and aging signatures.
+- ```./figures_paper/```: folder containing the figures for the paper. Note that the sensitivity test and specificity test are not exactly the same figures due to the randomisation of the syntehtic samples everytime we execute the code.
+  - **Figrue 4**: Number of mutations (per mappable genome) and mutation rate for each tissue sequenced with duplex sequecing (Case2, Case3 and unrelated donor) and WGS (Case1 tAML sample, clonal mutations).
+  - **Supplementary Figure S6B**: Number of mutations (per mappable genome) of duplex sequencing MRT sample from Case 3.
+  - **Supplementary Figure S12**: Relative exposure of the different signatures, testing the fitting with wither SBS31 or SBS35. Note that asterisk denote significance after specificity test.
+  - **Supplementary Figure S13**: Specificity test for the presence of SBS31 signature in the samples. Note that these plots may not be exactly as the ones in the figure of the paper due to the randomness in the generation of the synthetic samples. 
+  - **Supplementary Figure S14**: Sensitivity test for the confidecne interval of SBS31 exposure in the samples. Note that these plots may not be exactly as the ones in the figure of the paper due to the randomness in the generation of the synthetic samples.
+  
