@@ -1,6 +1,6 @@
 # Run sarek
 
-To run sarek, first install and activate the conda environment ```mutcall.yml```\
+To run sarek, first install and activate the conda environment ```mutcall.yml```
 
 Reference Genome files to run sarek can be downloaded from [here](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/).
 
