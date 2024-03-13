@@ -1,10 +1,10 @@
 # second-tumors-children
-This repository contains the necessary code to reproduce the analysis of "Origins of second tumors in children and mutational footprint of chemotherapy in normal tissues"
-Sánchez-Guixé M. et al 2024
+This repository contains the necessary code to reproduce the analysis of "Origins of Second Malignancies in Children and Mutational Footprint of Chemotherapy in Normal Tissues"
+Sánchez-Guixé M. et al 2024 (doi: 10.1158/2159-8290.CD-23-1186).
 
 ## Original data
 
-Original data (CRAM files) can be found at: EGAS50000000167.  
+Original data (CRAM files) can be found at: EGAS50000000167 (Datasets: EGAD50000000237, EGAD50000000238, EGAD50000000239, EGAD50000000240).  
 
 ## Conda environments
 
@@ -27,22 +27,25 @@ Occasionaly, other conda environments are used in some analysis. This is annotat
 	|	|- vcf_postprocessig
 	|	|- dPCR
 	|- case3_clones_analysis
-	|	|- signature_analysis
+	|	|- mutation_calling
+        |       |       |- sarek
+        |       |- vcf_postprocessing
+        |       |- signature_analysis
 - duplex_analysis
 	|- mutational_profiles
 	|- signature_analysis
 ```
 ## Folders descriptions and allocation of Figures:  
-1. Whole Genome Sequencing analysis ```wgs_analysis```:  
-1.1 Tumor vs. Blood ```tumor_vs_blood```:  
-    - From CRAM files to variant calling VCF files ```mutaton_calling```:  
-        - Hartwig Medical Foundation pipeline (SAGE, Purple, Haplotypecaller) ```hmf_pipeline```:
+1. ```wgs_analysis```, Whole Genome Sequencing analysis:  
+1.1 ```tumor_vs_blood```, Tumor vs. Blood:  
+    - ```mutaton_calling```, From CRAM files to variant calling VCF files:  
+        - ```hmf_pipeline```, Hartwig Medical Foundation pipeline (SAGE, Purple, Haplotypecaller):
         	- 	**Supplementary Figure S3C**
         	- 	**Supplementary Figure S4C**
         	- 	**Supplementary Figure S9A**
       		-  	**Supplementary Figure S10B**  
-        - Sarek pipeline (Mutect2, Strelka2, ASCAT) ```sarek```:  
-    - From VCF files to postprocessed annotated files, Clonal Cell Fraction and trees ```vcf_postprocessing```:
+        - ```sarek```, Sarek pipeline (Mutect2, Strelka2, ASCAT):  
+    - ```vcf_postprocessing```, From VCF files to postprocessed annotated files, Clonal Cell Fraction and trees:
     	-	**Figure 1B**
     	-	**Figure 2B**
     	-	**Figure 3F**
@@ -51,38 +54,44 @@ Occasionaly, other conda environments are used in some analysis. This is annotat
     	-	**Supplementary Figure S10A**
     	-	**Figure 1D**
     	-	**Figure 2C**
-     	-	**Supplementary Table 1**
-      	-	**Supplementary Table 2**
-    - Mutational profiles of clonal and subclonal mutations ```mutational_profiles```:
+        - 	**Supplementary Figure S6A**	
+     	-	**Supplementary Table S1**
+      	-	**Supplementary Table S2**
+    - ```mutational_profiles```, Mutational profiles of clonal and subclonal mutations:
     	- 	**Figure 1C**
      	- 	**Supplementary Figure S3D**
       	- 	**Supplementary Figure S4D**
       	- 	**Supplementary Figure S9B**
       	- 	**Supplementary Figure S10C**  
-    - Signature analysis of clonal and subclonal mutations ```signature_analysis```:
+    - ```signature_analysis```, Signature analysis of clonal and subclonal mutations:
     	- 	**Figure 1D**
      	- 	**Figure 2C**
       	- 	**Supplementary Figure S3B**
       	- 	**Supplementary Figure S4B**
       	- 	**Supplementary Figure S6A**   
 
-    1.2. Case 3; several normal tissues analysis ```case3_normal_tissues```:  
-    - From CRAM files to variant calling VCF files ```mutation_calling```:  
-        - Sarek pipeline (Mutect2, Haplotypecaller) ```sarek```:  
-    - From VCF files to postprocessed annotated files ```vcf_postprocessing```:
+    1.2. ```case3_normal_tissues```, Case 3; several normal tissues analysis:  
+    - ```mutation_calling```, From CRAM files to variant calling VCF files:  
+        - ```sarek```, Sarek pipeline (Mutect2, Haplotypecaller):  
+    - ```vcf_postprocessing```, From VCF files to postprocessed annotated files:
     	- 	**Figure 3B**
-     	- 	**Supplementary Figure S5B,C,D**
-    - Digital PCR results ```dPCR```:
+     	- 	**Supplementary Figure S5A,B,C,D**
+    - ```dPCR```, Digital PCR results:
     	- 	**Supplementary Figure S8A**
 
-    1.3. Case 3; expanded clones analysis ```case3_clones_analysis```:   
-    - Mutational signatures analysis ```signature_analysis```:
-    	- 	**Figure 3C**, **Supplementary Figure S6C**  
+    1.3. ```case3_clones_analysis```, Case 3; expanded clones analysis:
+    - ```mutation_calling```, From CRAM files to variant calling VCF files:
+    	- ```sarek```, Sarek pipeline (Strelka):
+    - ```vcf_postprocessing```, From VCF files to postprocessed annotated files, calculate clonality threshold:
+    - ```signature_analysis```, Mutational signatures analysis:
+    	- 	**Figure 3C**
+     	- 	**Supplementary Figure S6C**  
 
-2. Duplex Sequencing analysis ```duplex_sequencing```:
-    - Mutational profiles of private mutations ```mutational_profiles```:
+3. ```duplex_sequencing```, Duplex Sequencing analysis:
+    - ```mutational_profiles```, Mutational profiles of private mutations:
     	- 	**Supplementary Figure S11**  
-    - Signature analysis of private mutations ```signature_analysis```:
+    - ```signature_analysis```, Signature analysis of private mutations:
+    	- 	**Figure 4**
     	- 	**Supplementary Figure S6B**
      	- 	**Supplementary Figure S12**
       	- 	**Supplementary Figure S13**
